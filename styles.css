@@ -156,7 +156,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(Portfolio\images\bankist.png);
+    background-image: url(images/bank.png);
     background-size: cover;
     background-position: center;
 }
