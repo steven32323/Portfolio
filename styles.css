@@ -30,7 +30,7 @@ a {
     width: 100%;
 }
 
-.nav-btn {
+.btn {
     display: inline-block;
   background-color: var(--color-primary);
   font-size: 1.6rem;
@@ -42,8 +42,13 @@ a {
   cursor: pointer;
   transition: all 0.3s;
   color: var(--blue-text);
+  text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 ul {
     display: flex;
     align-items: center;

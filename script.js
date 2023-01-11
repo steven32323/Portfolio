@@ -1,19 +1,12 @@
 "use strict";
 
-const btnScrollProject = document.querySelector(".btn-project");
-const btnScrollAbout = document.querySelector(".btn-about");
-const btnScrollContact = document.querySelector(".btn-contact");
-const projects = document.querySelector("#projects");
-const aboutMe = document.querySelector("#aboutme");
-const contactMe = document.querySelector("#contactme");
-
 // Scrolling functions
-btnScrollProject.addEventListener("click", function () {
-  projects.scrollIntoView({ behavior: "smooth" });
-});
-btnScrollAbout.addEventListener("click", function () {
-  aboutMe.scrollIntoView({ behavior: "smooth" });
-});
-btnScrollContact.addEventListener("click", function () {
-  contactMe.scrollIntoView({ behavior: "smooth" });
+
+document.querySelectorAll(".nav-btn").forEach(function (e) {
+  e.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = this.getAttribute("href");
+    // console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  });
 });
