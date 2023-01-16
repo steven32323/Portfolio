@@ -35,7 +35,6 @@ const navBar = document.querySelector('.nav-bar');
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
   if (!entry.isIntersecting) {
     navBar.classList.add('sticky');
   } else navBar.classList.remove('sticky');
